@@ -4,8 +4,8 @@ var React = require('react');
 var Router = require('react-router');
 var Link = require('react-router').Link;
 var BibleStore = require('../../stores/bibleStore');
-var BibleActions = require('../../actions/bibleActions');
-var BibleBooksList = require('./bibleBooksList');
+var BookActions = require('../../actions/bookActions');
+var BookList = require('./bookList');
 
 var BiblePage = React.createClass({
 	getInitialState: function() {
@@ -32,7 +32,7 @@ var BiblePage = React.createClass({
 			<div>
 				<h1>Books</h1>
 				<Link to="addBook" className="btn btn-default">Add Book</Link>
-				<BibleBooksList books={this.state.books} />
+				<BookList books={this.state.books} />
 			</div>
 		);
 	}

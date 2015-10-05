@@ -14,7 +14,7 @@ var _clone = function(item) {
 };
 
 var booksApi = {
-	getAllbooks: function() {
+	getAllBooks: function() {
 		return _clone(books);
 	},
 

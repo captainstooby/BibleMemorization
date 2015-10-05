@@ -34,10 +34,11 @@ var BibleStore = assign({}, EventEmitter.prototype, {
 Dispatcher.register(function(action) {
 	switch(action.actionType) {
 		case ActionTypes.INITIALIZE:
+		console.log("Made it in the store's initialize");
 			_books = action.initialData.books;
 			BibleStore.emitChange();
 			break;
-		case ActionTypes.CREATE_AUTHOR:
+		case ActionTypes.ADD_BOOK:
 			_books.push(action.book);
 			BibleStore.emitChange();
 			break;

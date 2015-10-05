@@ -4,7 +4,7 @@ var Dispatcher = require('../dispatcher/appDispatcher');
 var BookApi = require('../api/bookApi');
 var ActionTypes = require('../constants/actionTypes');
 
-var BibleActions = {
+var BookActions = {
 	createBook: function(book) {
 		var newBook = BookApi.saveBook(book);
 
@@ -16,4 +16,4 @@ var BibleActions = {
 	}
 };
 
-module.exports = BibleActions;
+module.exports = BookActions;
