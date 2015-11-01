@@ -25,5 +25,8 @@
     "reactify": "^1.1.1",
     "toastr": "^2.1.0",
     "vinyl-source-stream": "^1.1.0"
+  },
+  "devDependencies": {
+    "gulp": "https://registry.npmjs.org/gulp/-/gulp-3.9.0.tgz"
   }
 }
