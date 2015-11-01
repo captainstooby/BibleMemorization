@@ -16,7 +16,8 @@ var routes = (
     <Route name="manageAuthor" path="author/:id" handler={require('./components/authors/manageAuthorPage')} />
     <Route name="about" handler={require('./components/about/aboutPage')} />
     <Route name="bible" handler={require('./components/bible/biblePage')} />
-    <Route name="addBook" path="book" handler={require('./components/bible/manageBibleBookPage')} />  
+    <Route name="addBook" path="book/" handler={require('./components/bible/manageBibleBookPage')} />
+    <Route name="manageBibleBook" path="book/:id" handler={require('./components/bible/manageBibleBookPage')} />
     <NotFoundRoute handler={require('./components/notFoundPage')} />
     <Redirect from="about-us" to="about" />
     <Redirect from="awthurs" to="authors" />
