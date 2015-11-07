@@ -47,7 +47,7 @@ var ManageBibleBookPage = React.createClass({
 		var formIsValid = true;
 		this.state.errors = {}; //clear any previous errors.
 
-		if (this.state.book.name.length == 0) {
+		if (this.state.book.name.length === 0) {
 			this.state.errors.book = 'Book name must be provided';
 			formIsValid = false;
 		}

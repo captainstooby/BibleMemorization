@@ -45429,7 +45429,6 @@ var BookActions = {
 };
 
 module.exports = BookActions;
-
 },{"../api/bookApi":209,"../constants/actionTypes":225,"../dispatcher/appDispatcher":226}],206:[function(require,module,exports){
 "use strict";
 
@@ -45451,7 +45450,6 @@ var InitializeActions = {
 };
 
 module.exports = InitializeActions;
-
 },{"../api/authorApi":207,"../api/bookApi":209,"../constants/actionTypes":225,"../dispatcher/appDispatcher":226}],207:[function(require,module,exports){
 "use strict";
 
@@ -45572,7 +45570,6 @@ var booksApi = {
 };
 
   module.exports = booksApi;
-
 },{"./booksData":210,"lodash":7}],210:[function(require,module,exports){
 module.exports = {
 	books:
@@ -45589,7 +45586,6 @@ module.exports = {
 		}
 	]
 };
-
 },{}],211:[function(require,module,exports){
 "use strict";
 
@@ -45917,7 +45913,6 @@ var BibleBookForm = React.createClass({displayName: "BibleBookForm",
 });
 
 module.exports = BibleBookForm;
-
 },{"../common/textInput":222,"react":202}],218:[function(require,module,exports){
 "use strict";
 
@@ -45960,7 +45955,6 @@ var BiblePage = React.createClass({displayName: "BiblePage",
 });
 
 module.exports = BiblePage;
-
 },{"../../actions/bookActions":205,"../../stores/bibleStore":230,"./bookList":219,"react":202,"react-router":33}],219:[function(require,module,exports){
 "use strict";
 
@@ -46004,7 +45998,6 @@ var BookList = React.createClass({displayName: "BookList",
 });
 
 module.exports = BookList;
-
 },{"../../actions/bookActions":205,"react":202,"react-router":33,"toastr":203}],220:[function(require,module,exports){
 "use strict";
 
@@ -46055,7 +46048,7 @@ var ManageBibleBookPage = React.createClass({displayName: "ManageBibleBookPage",
 		var formIsValid = true;
 		this.state.errors = {}; //clear any previous errors.
 
-		if (this.state.book.name.length == 0) {
+		if (this.state.book.name.length === 0) {
 			this.state.errors.book = 'Book name must be provided';
 			formIsValid = false;
 		}
@@ -46092,7 +46085,6 @@ var ManageBibleBookPage = React.createClass({displayName: "ManageBibleBookPage",
 });
 
 module.exports = ManageBibleBookPage;
-
 },{"../../actions/bookActions":205,"../../stores/bibleStore":230,"./bibleBookForm":217,"react":202,"react-router":33,"toastr":203}],221:[function(require,module,exports){
 "use strict";
 
@@ -46121,7 +46113,6 @@ var Header = React.createClass({displayName: "Header",
 });
 
 module.exports = Header;
-
 },{"react":202,"react-router":33}],222:[function(require,module,exports){
 "use strict";
 
@@ -46216,7 +46207,6 @@ module.exports = keyMirror({
 	DELETE_AUTHOR: null,
 	ADD_BOOK: null
 });
-
 },{"react/lib/keyMirror":187}],226:[function(require,module,exports){
 /*
  * Copyright (c) 2015, Facebook, Inc.
@@ -46248,7 +46238,6 @@ InitializeActions.initApp();
 Router.run(routes, function(Handler) {
 	React.render(React.createElement(Handler, null), document.getElementById('app'));
 });
-
 },{"./actions/initializeActions":206,"./routes":228,"react":202,"react-router":33}],228:[function(require,module,exports){
 "use strict";
 
@@ -46278,7 +46267,6 @@ var routes = (
 );
 
 module.exports = routes;
-
 },{"./components/about/aboutPage":211,"./components/app":212,"./components/authors/authorPage":215,"./components/authors/manageAuthorPage":216,"./components/bible/biblePage":218,"./components/bible/manageBibleBookPage":220,"./components/homePage":223,"./components/notFoundPage":224,"react":202,"react-router":33}],229:[function(require,module,exports){
 "use strict";
 
@@ -46392,5 +46380,4 @@ Dispatcher.register(function(action) {
 });
 
 module.exports = BibleStore;
-
 },{"../constants/actionTypes":225,"../dispatcher/appDispatcher":226,"events":1,"lodash":7,"object-assign":8}]},{},[227]);
